@@ -49,7 +49,7 @@ public class Monom implements function{
 	 * @param monomAns
 	 * @return monom form
 	 */
-	public double f(double x)
+	public double f(double x)//function Mathod
 	{
 		double a = get_coefficient();
 		int b = get_power();

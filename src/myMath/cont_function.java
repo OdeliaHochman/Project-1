@@ -1,5 +1,5 @@
 package myMath;
-
+//Interface
 /**
  * The interface represents a continuance function 
  * @author Efrat and Odelia

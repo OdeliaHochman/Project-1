@@ -6,7 +6,8 @@ import java.util.Comparator;
  * @author Efrat and Odelia
  *
  */
-public class Monom_Comperator implements Comparator<Monom> {
+
+public class Monom_Comperator implements Comparator<Monom> {//compare by power
 	/**
 	 * The function compares the powers of the monoms
 	 */

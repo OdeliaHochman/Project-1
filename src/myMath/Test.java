@@ -43,7 +43,7 @@ public class Test {
 
 	
 
-	public static void testHello() 
+	public static void testHello() //first test
 	{
 		Polynom p= new Polynom("Hello");
 		System.out.println(p);

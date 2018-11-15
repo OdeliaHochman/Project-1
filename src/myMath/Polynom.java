@@ -27,7 +27,7 @@ public class Polynom implements Polynom_able{
 	/**
 	 * constructor
 	 */
-	public Polynom() 
+	public Polynom() //consructor
 	{
 		this.lstMon = new ArrayList<>();
 
