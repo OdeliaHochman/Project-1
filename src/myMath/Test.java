@@ -7,28 +7,28 @@ public class Test {
 
 		try {
 			
-//      			        System.out.println("testF:");
-//						testF();
+      			        System.out.println("testF:");
+						testF();
 //			            System.out.println("testHello");
 //			            testHello();			
-//			            System.out.println("testAddPolynom:");
-//			            testAddPolynom();
-//						System.out.println("testAddMonom:");
-//					    testAddMonom();
-//						System.out.println("testSubstract:");
-//						testSubstract();
-//						System.out.println("testMultiply:");
-//						testMultiply();
+			            System.out.println("testAddPolynom:");
+			            testAddPolynom();
+						System.out.println("testAddMonom:");
+					    testAddMonom();
+						System.out.println("testSubstract:");
+						testSubstract();
+						System.out.println("testMultiply:");
+						testMultiply();
 						System.out.println("testDerivative:");
 					    testDerivative();
-//						System.out.println("testArea:");
-//						testArea();
-//						System.out.println("testRoot:");
-//					    testRoot();
-//						System.out.println("testZero:");
-//						testZero();
-//						System.out.println("polynomCopy");
-//					    polynomCopy();
+						System.out.println("testArea:");
+						testArea();
+						System.out.println("testRoot:");
+					    testRoot();
+						System.out.println("testZero:");
+						testZero();
+						System.out.println("polynomCopy");
+					    polynomCopy();
 			         
 					    
 		} 
