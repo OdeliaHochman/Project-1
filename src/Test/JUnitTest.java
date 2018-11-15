@@ -1,7 +1,6 @@
-package Test;
+package test;
 
 import static org.junit.Assert.fail;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Iterator;
@@ -15,13 +14,14 @@ import myMath.Polynom_able;
 class JUnitTest {
 
 	
-//	@Test
-//	void testHello()
-//	{
-//		Polynom p2 = new Polynom("Hello");
-//		fail( "expression shouldn't contains Alphabetic characters.");
-//	}
-//	 
+	@Test
+	void testHello()
+	{
+		Polynom p2 = new Polynom("Hello");
+			
+		fail( "expression shouldn't contains Alphabetic characters.");
+	}
+	 
 
 	@Test
 	void testF()
@@ -36,7 +36,7 @@ class JUnitTest {
 	void testAddPolynom()
 	{
 		Polynom p3 = new Polynom("2x+9x^5+4x^2+8");
-		Polynom p4 = new Polynom("5x^7-5x^7+2");
+		Polynom p4 = new Polynom("5x^7+-5x^7+2");
 		p3.add(p4);
 		assertEquals("10.0x^0+2.0x^1+4.0x^2+9.0x^5", p3.toString());
 	}
@@ -69,7 +69,7 @@ class JUnitTest {
 		p8.add(new Monom(-6,1));
 		p8.add(new Monom(0,6));
 		p8.add(new Monom(3,2));
-		assertEquals("3.0x^0-6.0x^1+3.0x^2+0.4x^3", p8.toString());
+		assertEquals("3.0x^0+-6.0x^1+3.0x^2+0.4x^3", p8.toString());
 
 	}
 	@Test
@@ -77,7 +77,7 @@ class JUnitTest {
 	{
 
 		Polynom p9 = new Polynom("x+5x^7+4x^2+1");
-		Polynom p10= new Polynom("5x^7-3x^2+2");
+		Polynom p10= new Polynom("5x^7+-3x^2+2");
 		p9.substract(p10);
 		assertEquals("-1.0x^0+1.0x^1+7.0x^2", p9.toString());
 
@@ -113,9 +113,9 @@ class JUnitTest {
 	@Test
 	void testDerivative()
 	{
-		Polynom p15 = new Polynom("2.0x^1+4.0x^8-3.0x^5+8");
+		Polynom p15 = new Polynom("2.0x^1+4.0x^8+-3.0x^5+8");
 		Polynom p16= new Polynom("-5.0x^2+6.0x^9");
-		assertEquals("2.0x^0+32.0x^7-15.0x^4", p15.derivative().toString());
+		assertEquals("2.0x^0+32.0x^7+-15.0x^4", p15.derivative().toString());
 		assertEquals("-10.0x^1+54.0x^8", p16.derivative().toString());
 
 
@@ -123,15 +123,15 @@ class JUnitTest {
 	@Test
 	void polynomCopy()
 	{
-		Polynom p17 = new Polynom("2x-3x^5+4x^8");
+		Polynom p17 = new Polynom("2x+-3x^5+4x^8");
 		Polynom p18 = new Polynom(p17.toString());
-		assertEquals("2.0x^1-3.0x^5+4.0x^8", p17.toString());
-		assertEquals("2.0x^1-3.0x^5+4.0x^8", p18.toString());	
+		assertEquals("2.0x^1+-3.0x^5+4.0x^8", p17.toString());
+		assertEquals("2.0x^1+-3.0x^5+4.0x^8", p18.toString());	
 	}
 	@Test
 	void testRoot()
 	{
-		Polynom p19=new Polynom ("x-5");
+		Polynom p19=new Polynom ("x+-5");
 		assertEquals(5.0, p19.root(2, 8, 0.01));
 
 		Polynom p = new Polynom("x^2+3x+1");
@@ -142,7 +142,7 @@ class JUnitTest {
 	@Test
 	void testArea()
 	{
-		Polynom p20 = new Polynom("2x-3x^2+x^3");
+		Polynom p20 = new Polynom("2x+-3x^2+x^3");
 		double eps = 0.0001;
 		assertEquals(0.25, p20.area(0, 1, eps));
 		
@@ -165,7 +165,7 @@ class JUnitTest {
 	@Test
 	void testIterator()
 	{
-		Polynom p = new Polynom("4.0x^1+2.0x^5-9.3x^6");
+		Polynom p = new Polynom("4.0x^1+2.0x^5+-9.3x^6");
 		Iterator<Monom> itr = p.iteretor();
 		Polynom actual = new Polynom();
 		while(itr.hasNext())
@@ -173,7 +173,7 @@ class JUnitTest {
 			Monom m=itr.next();
 			actual.add(m);
 		}
-		assertEquals("4.0x^1+2.0x^5-9.3x^6", actual.toString());
+		assertEquals("4.0x^1+2.0x^5+-9.3x^6", actual.toString());
 	}
 
 }

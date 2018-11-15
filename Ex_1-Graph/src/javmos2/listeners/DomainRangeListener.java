@@ -1,18 +1,11 @@
 package javmos2.listeners;
 
 import java.awt.event.ActionEvent;
-<<<<<<< HEAD
 
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javmos2_components.JavmosPanel;
-=======
-import java.awt.event.ActionListener;
-import javax.swing.JOptionPane;
-import javax.swing.JTextField;
-import javmos2.components.JavmosPanel;
->>>>>>> branch 'master' of https://github.com/OdeliaHochman/Project-1.git
 
 public class DomainRangeListener implements ActionListener {
 

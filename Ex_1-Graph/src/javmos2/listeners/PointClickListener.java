@@ -1,7 +1,6 @@
 package javmos2.listeners;
 
 import java.awt.event.MouseEvent;
-<<<<<<< HEAD
 
 import java.awt.event.MouseListener;
 import java.util.HashSet;
@@ -14,19 +13,6 @@ public class PointClickListener implements MouseListener {
     private final HashSet<Point> points;
 
     public PointClickListener(GraphGUI gui) {
-=======
-import java.awt.event.MouseListener;
-import java.util.HashSet;
-import javmos2.JavmosGUI;
-import javmos2.components.Point;
-
-public class PointClickListener implements MouseListener {
-
-    private final JavmosGUI gui;
-    private final HashSet<Point> points;
-
-    public PointClickListener(JavmosGUI gui) {
->>>>>>> branch 'master' of https://github.com/OdeliaHochman/Project-1.git
         this.gui = gui;
         this.points = new HashSet<>();
     }

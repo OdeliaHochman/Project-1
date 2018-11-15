@@ -1,7 +1,6 @@
 package javmos2.listeners;
 
 import java.awt.event.ActionEvent;
-<<<<<<< HEAD
 
 import java.awt.event.ActionListener;
 import javmos2.GraphGUI;
@@ -14,19 +13,6 @@ public class ZoomListener implements ActionListener {
     private final JavmosPanel panel;
 
     public ZoomListener(GraphGUI gui, JavmosPanel panel) {
-=======
-import java.awt.event.ActionListener;
-import javmos2.JavmosGUI;
-import javmos2.components.JavmosPanel;
-
-public class ZoomListener implements ActionListener {
-    
-    private final int ZOOM_FACTOR = 10;
-    private final JavmosGUI gui;
-    private final JavmosPanel panel;
-
-    public ZoomListener(JavmosGUI gui, JavmosPanel panel) {
->>>>>>> branch 'master' of https://github.com/OdeliaHochman/Project-1.git
         this.gui = gui;
         this.panel = panel;
     }
